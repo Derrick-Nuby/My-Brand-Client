@@ -21,6 +21,9 @@ body {
     color: var(--mtext);
 }
 
+.btm {
+    margin-bottom: 70px;
+}
 
 /* * {
     border: red 1px solid;
@@ -298,6 +301,35 @@ input[type=submit]:hover {
 }
 
 
+
+#searchForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 50%; */
+}
+
+#searchForm input[type="text"] {
+    background-color: var(--bgcolor);
+    border: 2px solid var(--scolor);
+    color: var(--scolor);
+
+}
+
+#searchForm input {
+    border-radius: 15px;
+    padding: 10px;
+    margin: 5px;
+    width: 40%;
+}
+
+#searchForm input[type="submit"] {
+    cursor: pointer;
+    border: none;
+    width: 10%;
+}
+
+
 /* articles page */
 .articlesection {
     margin: 50px 0px;
@@ -440,6 +472,19 @@ footer > a {
         }
         .menu {
             display: none;
+            flex-direction: column; /* Stack the links vertically */
+            gap: 15px; /* Add spacing between links */
+            position: absolute;
+            top: 60px; /* Adjust the position to appear below the header */
+            right: 0;
+            background-color: white; /* Background color */
+            border: 1px solid #ccc; /* Border to define the menu area */
+            padding: 10px;
+        }
+    
+        .bars {
+            display: block; /* Show the hamburger icon */
+            cursor: pointer;
         }
         footer{
             flex-direction: column;

@@ -24,7 +24,7 @@ function addblog(event) {
         if (data.error) {
             showMessage(data.error)
         } else {
-            showMessage(data.message, '10E956')
+            showMessage(data.message, '#10E956')
             fetchAndPopulateArticles();
         }
     })
@@ -187,16 +187,12 @@ function updateArticle(event) {
 
     const formData = new FormData(form);
 
-    const blogImage = document.getElementById('blogimage').files[0];
-    if (blogImage) {
-        formData.append('image', blogImage);
-    }
 
-    const title = document.getElementById('title')
-    const description = document.getElementById('description')
+    // const title = document.getElementById('title')
+    // const description = document.getElementById('description')
 
-    formData.append('title', title);
-    formData.append('description', description);
+    // formData.append('title', title);
+    // formData.append('description', description);
 
 
 if (articleId) {

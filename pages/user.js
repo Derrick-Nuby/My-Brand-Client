@@ -1,9 +1,13 @@
 const API_URL = 'https://derricks-brand.onrender.com';
+
 // const API_URL = 'http://localhost:4000';
+
 const cookie = document.cookie.split('jwt=')[1]
 
-function testUserAuth() {
- fetch(`${API_URL}/api/auth/authadmin`, {
+function testUserAuth(event) {
+    event.preventDefault();
+
+fetch(`${API_URL}/api/auth/authuser`, {
     method: 'GET',
     headers: {
         'Authorization': `Bearer ${cookie}`,
@@ -12,6 +16,7 @@ function testUserAuth() {
     
 .then(response => response.json())
 .then(data => {
+    console.log(data);
     if(data.error) {
         showMessage(data.error)
     }
