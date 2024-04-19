@@ -1,4 +1,4 @@
-> ![GitHub language count](https://img.shields.io/github/languages/count/Derrick-Nuby/My-Brand) ![GitHub top language](https://img.shields.io/github/languages/top/Derrick-Nuby/My-Brand) ![Website](https://img.shields.io/website?up_message=active&url=https%3A%2F%2Fderrick-nuby.github.io%2FMy-Brand%2F) ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/Derrick-Nuby/My-Brand) ![GitHub last commit](https://img.shields.io/github/last-commit/Derrick-Nuby/My-Brand) ![Twitter Follow](https://img.shields.io/twitter/follow/derricknuby?style=social) ![GitHub Repo stars](https://img.shields.io/github/stars/Derrick-Nuby/My-Brand?style=social)
+> ![GitHub language count](https://img.shields.io/github/languages/count/Derrick-Nuby/My-Brand-client) ![GitHub top language](https://img.shields.io/github/languages/top/Derrick-Nuby/My-Brand-client) ![Website](https://img.shields.io/website?up_message=active&url=https%3A%2F%2Fderrick-nuby.github.io%2FMy-Brand-client%2F) ![GitHub commit activity](https://img.shields.io/github/commit-activity/w/Derrick-Nuby/My-Brand-client) ![GitHub last commit](https://img.shields.io/github/last-commit/Derrick-Nuby/My-Brand-client) ![Twitter Follow](https://img.shields.io/twitter/follow/derricknuby?style=social) ![GitHub Repo stars](https://img.shields.io/github/stars/Derrick-Nuby/My-Brand-client?style=social)
 
 # My Personal Portfolio Website
 
@@ -9,7 +9,7 @@
 ![Portfolio image showcasing](./images/project2.png)
 
 <h1 align="center">
-<a href="https://derrick-nuby.github.io/My-Brand/" TARGET="_blank" rel="noreferrer noopener"> Visit Portfolio Website</a> </h1>
+<a href="https://derrick-nuby.github.io/My-Brand-client/" TARGET="_blank" rel="noreferrer noopener"> Visit Portfolio Website</a> </h1>
 <br>
 
 ## Why Portfolio Website
