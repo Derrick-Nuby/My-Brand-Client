@@ -1,23 +1,24 @@
-const API_URL = 'https://derricks-brand.onrender.com';
-// const API_URL = 'http://localhost:4000';
+// const API_URL = 'https://derricks-brand.onrender.com';
+const API_URL = 'http://localhost:4000';
 const cookie = document.cookie.split('jwt=')[1]
 
 function testUserAuth() {
- fetch(`${API_URL}/api/auth/authadmin`, {
+fetch(`${API_URL}/api/auth/authadmin`, {
     method: 'GET',
     headers: {
         'Authorization': `Bearer ${cookie}`,
         'Content-Type': 'application/json',
-    }
-    
+            }
+})    
 .then(response => response.json())
 .then(data => {
     if(data.error) {
-        showMessage(data.error)
+        console.log(data.error);
+        window.location.href = '../pages/articles.html'
+    }   else {
+        console.log(data.message);
     }
 })
-});
-
 };
 
 

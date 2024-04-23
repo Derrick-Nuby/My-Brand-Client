@@ -1,6 +1,6 @@
-const API_URL = 'https://derricks-brand.onrender.com';
+// const API_URL = 'https://derricks-brand.onrender.com';
 
-// const API_URL = 'http://localhost:4000';
+const API_URL = 'http://localhost:4000';
 
 const cookie = document.cookie.split('jwt=')[1]
 
@@ -12,17 +12,20 @@ fetch(`${API_URL}/api/auth/authuser`, {
     headers: {
         'Authorization': `Bearer ${cookie}`,
         'Content-Type': 'application/json',
-    }
-    
+            }
+})    
 .then(response => response.json())
 .then(data => {
     console.log(data);
     if(data.error) {
-        showMessage(data.error)
+        console.log(data.error)
+    }   else {
+        console.log(data.message)
     }
 })
+.catch(error => {
+    console.log(error);
 });
-
 };
 
 
