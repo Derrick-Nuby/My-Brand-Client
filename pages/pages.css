@@ -122,6 +122,7 @@ header {
     margin: 10px 0px;
 }
 
+
 #active {
     color: var(--scolor);
 }
@@ -417,6 +418,17 @@ input[type=submit]:hover {
 .cmnthd span:hover {
     cursor: pointer;
     color: var(--fcolor);
+}
+
+.commentactions {
+    display: flex;
+    gap: 2%;
+    justify-content: space-between;
+}
+
+.commentactions p:hover {
+    color: var(--fcolor);
+    cursor: pointer;
 }
 
 
