@@ -163,8 +163,33 @@ function populateComments(comments) {
     
         const commentContent = document.createElement('p');
         commentContent.textContent = comment.content;
-
         commentElement.appendChild(commentContent);
+
+
+        const commentActions = document.createElement('div');
+        commentActions.classList.add('scolor', 'commentactions');
+
+        const likesP = document.createElement('p');
+        likesP.innerHTML += '<span>12 Likes</span>';
+        commentActions.appendChild(likesP);
+
+        const likeP = document.createElement('p');
+        const likeIcon = document.createElement('i');
+        likeIcon.classList.add('fa-solid', 'fa-heart');
+        likeP.appendChild(likeIcon);
+        likeP.innerHTML += '<span>Like</span>';
+        likeP.setAttribute('data-id', comment._id);
+        commentActions.appendChild(likeP);
+
+        const replyP = document.createElement('p');
+        const replyIcon = document.createElement('i');
+        replyIcon.classList.add('fa-solid', 'fa-reply');
+        replyP.appendChild(replyIcon);
+        replyP.innerHTML += '<span>Reply</span>';
+        replyP.setAttribute('data-id', comment._id);
+        commentActions.appendChild(replyP);
+
+        commentElement.appendChild(commentActions);
         commentsContainer.appendChild(commentElement);
     });
     
