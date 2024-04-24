@@ -398,9 +398,24 @@ input[type=submit]:hover {
     padding: 0px 100px;
 }
 
+.replycommentform {
+    width: 69vw;
+    /* padding: 0px 100px; */
+    /* display: none; */
+}
+
 .comment {
     border: var(--fcolor) 4px solid;
     margin: 30px 0px;
+    font-weight: 300;
+    padding: 20px 50px;
+    border-radius: 10px;
+}
+
+.replyComment {
+    border: #478cecb7 4px solid;
+    /* margin: 30px 0px; */
+    margin: 3vw 0vw 3vw 9vw;
     font-weight: 300;
     padding: 20px 50px;
     border-radius: 10px;
@@ -552,6 +567,13 @@ footer > a {
             padding: 5px;
         }
         .comment {
+            border: var(--fcolor) 4px solid;
+            margin: 30px 0px;
+            font-weight: 300;
+            padding: 5px 15px;
+            border-radius: 10px;
+        }
+        .replyComment {
             border: var(--fcolor) 4px solid;
             margin: 30px 0px;
             font-weight: 300;
