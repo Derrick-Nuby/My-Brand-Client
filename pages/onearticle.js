@@ -203,12 +203,12 @@ function toggleLike(event) {
     const likeIcon = event.target;
 
     const urlParams = new URLSearchParams(window.location.search);
-    const blogId = urlParams.get('id');
+    const itemId = urlParams.get('id');
 
     const isLiked = likeIcon.classList.contains('liked');
 
     if (isLiked) {
-        fetch(`${API_URL}/api/like/${blogId}`,  {
+        fetch(`${API_URL}/api/like/${itemId}`,  {
             method: 'DELETE',
             headers: {
                 "Authorization": `Bearer ${cookie}`
@@ -233,7 +233,7 @@ function toggleLike(event) {
                 "Authorization": `Bearer ${cookie}`
             },
             body: JSON.stringify({
-                blogId: blogId,
+                itemId: itemId,
                 liked: true,
             }),
         })
