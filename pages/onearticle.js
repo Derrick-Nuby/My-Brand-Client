@@ -65,7 +65,7 @@ function updateBlogPostHtml(blogPost) {
     document.title = blogPost.title;
 }
 
-// document.getElementById('formComment').addEventListener('submit', updateComment);
+document.getElementById('formComment').addEventListener('submit', updateComment);
 
 function createComment(event) {
     event.preventDefault();
@@ -199,25 +199,6 @@ function populateComments(comments) {
 
         commentElement.appendChild(commentActions);
         commentsContainer.appendChild(commentElement);
-
-        var modal = document.getElementById("myModal");
-        var replyButtons = document.querySelectorAll(".reply-btn");
-        var span = document.getElementsByClassName("close")[0];
-
-        replyButtons.forEach(function(button) {
-            button.onclick = function() {
-                modal.style.display = "block";
-            }     
-        });
-
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-        window.onclick = function(event) {
-            if (event.target == modal) {
-            modal.style.display = "none";
-        }
-        }
         
     });
     
